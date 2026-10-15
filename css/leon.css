@@ -349,7 +349,16 @@ header .container .links ul li:not(:last-child) {
   padding-top: 100px;
   gap: 20px;
 }
-
+@media(max-width: 991px) {
+  .about .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .about .about-content .text {
+    text-align: center;
+  }
+}
 .about .about-content .image {
   position: relative;
   width:  250px ;
@@ -383,5 +392,25 @@ header .container .links ul li:not(:last-child) {
   height: auto;
 }
 
+.about .about-content .text {
+  flex-basis: calc(100% - 400px);
+  align-self: center;
+}
 
+.about .about-content .text p:first-of-type{
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.about .about-content .text hr {
+  width: 50%;
+  border-color: var(--mainColor);
+  display: inline-block
+}
+.about .about-content .text p:last-of-type{
+  font-size: 14px;
+  line-height: 1.6;
+  color : var(--textColor)
+}
 /* end about */
