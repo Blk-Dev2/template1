@@ -414,3 +414,74 @@ header .container .links ul li:not(:last-child) {
   color : var(--textColor)
 }
 /* end about */
+
+/* start contact  */
+.contact {
+  padding: var(--sectionPadding);
+  background-color: var(--sectionColor);
+}
+
+.contact .info {
+  padding: var(--sectionPadding);
+  text-align: center;
+}
+
+.contact .info .lable {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--secondColor);
+    letter-spacing: -2px;
+    margin: 0px 0 15px;
+}
+
+.contact .info .link {
+  display: block;
+  text-decoration: none;
+  color: var(--mainColor);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.contact .info .social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact .info .social i {
+  color: var(--secondColor);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+    .contact .info .lable {
+      font-size: 25px;
+    }
+    .contact .info .link {
+      font-size: 18px;
+    }
+}
+
+footer {
+  background-color: var(--secondColor);
+}
+footer .container {
+  text-align: center;
+}
+footer .container p {
+    font-size: 15px;
+    margin: 0;
+    padding: 20px 0;
+    color: white;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+  footer .container p {
+    font-size: 13px;
+  }
+}
+footer .container p span {
+  color : var(--mainColor)
+}
+
+/* end contact  */
